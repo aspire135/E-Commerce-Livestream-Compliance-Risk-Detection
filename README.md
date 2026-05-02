@@ -207,7 +207,7 @@ In the paper, retrieval-augmented case grounding is treated as a lightweight cal
 
 This repository does not include raw videos, raw user identifiers, host identifiers, shop identifiers, product URLs, private messages, payment information, or user profiles.
 
-The anonymized benchmark data are intended to be released separately after privacy review. The released dataset is expected to include:
+The anonymized benchmark dataset will be released after paper acceptance and completion of privacy review. The release will include:
 
 - timestamped ASR transcripts
 - anonymized live comments
@@ -215,6 +215,8 @@ The anonymized benchmark data are intended to be released separately after priva
 - binary compliance labels
 - abnormality rationales
 - predefined train / validation / test splits
+
+Raw videos will not be publicly released due to privacy, portrait-right, and platform-compliance considerations.
 
 ## License
 
