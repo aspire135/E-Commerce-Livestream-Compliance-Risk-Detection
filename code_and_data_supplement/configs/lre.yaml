@@ -1,0 +1,27 @@
+# LRE training configuration
+# Matches implementation details in Section 6.1
+
+# Data
+train_path: "data/split_metadata/train.jsonl"
+val_path: "data/split_metadata/val.jsonl"
+
+# Model
+bert_model: "bert-base-chinese"
+proj_dim: 4096             # reasoning-semantic alignment dimension
+
+# Training
+batch_size: 16
+epochs: 50
+lr: 1.0e-3                 # non-BERT parameters
+bert_lr: 5.0e-6            # BERT last 2 layers + pooler
+weight_decay: 0.01
+patience: 5                # ReduceLROnPlateau
+
+# Loss
+lambda_align: 0.3          # weight of reasoning-semantic alignment loss
+
+# Output
+output_ckpt: "outputs/lre_best.pt"
+
+# Hardware
+device: "cuda:0"

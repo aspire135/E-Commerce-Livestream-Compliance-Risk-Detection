@@ -1,0 +1,20 @@
+# CMR configuration — Qwen2.5-14B-Instruct (local HF, FP16, dual GPU)
+# Section 6.1
+
+model_name: "Qwen2.5-14B-Instruct"
+model_path: "Qwen/Qwen2.5-14B-Instruct"   # HuggingFace model ID
+mode: "hf"                                 # local HuggingFace inference
+torch_dtype: "float16"
+device_map: "auto"                         # single A100 80GB
+
+# Retrieval
+top_k: 3                                   # number of retrieved cases
+encoder_model: "all-MiniLM-L6-v2"         # retrieval and CMR-response encoder
+
+# Inference
+temperature: 0.1
+max_tokens: 1024
+batch_size: 1                              # latency measured at batch=1
+
+# Prompt
+prompt_version: "cpo_v1"                   # matches cmr/prompts/cpo_prompt.py
