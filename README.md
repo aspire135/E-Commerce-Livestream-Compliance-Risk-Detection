@@ -1,10 +1,10 @@
+# E-Commerce-Livestream-Compliance-Risk-Detection
 
-
-This repository contains the main inference script for the paper:
+Official inference code for the paper:
 
 **Mechanism-Aligned Multimodal Evidence Reasoning for E-Commerce Livestream Compliance Detection**
 
-The code implements the HCRP inference pipeline used to score one-minute e-commerce livestream clips using mechanism-aligned evidence streams:
+This repository contains the main inference script for the HCRP inference pipeline used to score one-minute e-commerce livestream clips using mechanism-aligned evidence streams:
 
 - **ASR transcripts** for Cause-level evidence
 - **Live comments / interaction signals** for Propagation-level evidence
@@ -20,7 +20,7 @@ Raw videos are not used as primary evidence in the released inference script.
 └── README.md
 ```
 
-This anonymous repository intentionally contains only the main release script.  
+This repository intentionally contains only the main release script.  
 The dataset is not included in this repository because it contains livestream-derived user comments, ASR transcripts, sales records, and other platform-specific data that require anonymization and release review.
 
 ## Requirements
