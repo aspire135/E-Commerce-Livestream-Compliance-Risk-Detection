@@ -1,4 +1,4 @@
-# HCRP Inference for E-Commerce Livestream Compliance Detection
+
 
 This repository contains the main inference script for the paper:
 
